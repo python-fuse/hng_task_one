@@ -28,7 +28,8 @@
 }
 
 body {
-  padding: 10px 15px 0 15px;
+  overflow-x: hidden;
+  padding: 10px 2px 4px 2px;
   background-color: #232530;
   text-align: center;
   z-index: 2;
@@ -101,7 +102,20 @@ nav {
   left: -22rem;
   transition: all 0.4s ease-in-out;
 }
+
+@media (max-width: 768px) {
+  .avatar img {
+    width: 1px;
+  }
+
+  section {
+    max-width: 300px;
+  }
+}
 @media (min-width: 768px) {
+  #image {
+    width: 624px;
+  }
   nav {
     display: flex;
     font-size: 1.3rem;
@@ -143,9 +157,9 @@ nav {
     width: 60%;
     margin: auto;
   }
-  section{
-max-width: 510px;
-}
+  section {
+    max-width: 510px;
+  }
 }
 
 nav a {
@@ -225,8 +239,6 @@ section {
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
-  
-
   p {
     text-align: justify;
   }
@@ -241,9 +253,9 @@ section {
   padding: 100px;
   img {
     aspect-ratio: 1;
-    width: 640px;
+    width: 300px;
     border-radius: 50%;
-    filter: drop-shadow(2px 2px 6px var(--main-text) A6);
+    filter: drop-shadow(2px 2px 6px var(--main-text));
     margin-bottom: 0.5rem;
   }
 }
