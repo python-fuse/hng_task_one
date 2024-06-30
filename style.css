@@ -22,14 +22,15 @@
   --main-text: #ff00a5;
 }
 
-.main {
+.main,
+body {
   display: grid;
   place-content: center;
   overflow-x: hidden;
 }
 
 body {
-  padding: 10px 15px 4px 15px;
+  padding: 5px 10px 4px 5px;
   background-color: #232530;
   text-align: center;
   z-index: 2;
