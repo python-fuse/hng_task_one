@@ -25,15 +25,16 @@
 .main {
   display: grid;
   place-content: center;
+  overflow-x: hidden;
 }
 
 body {
-  overflow-x: hidden;
-  padding: 10px 2px 4px 2px;
+  padding: 10px 15px 4px 15px;
   background-color: #232530;
   text-align: center;
   z-index: 2;
   font-family: Poppins;
+  /* width: max-content; */
 }
 
 header {
