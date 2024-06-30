@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>My Portfolio</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Project -->
+    <!--Home:About:Portfolio:Contact-->
+    <header>
+      <h2 class="title">PY-FUSE</h2>
+      <nav class="top-bar" id="menu">
+        <a href="#home">Home</a>
+        <a href="#plans">Plans</a>
+        <a href="#tasks">Tasks</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#hire">Hire me</a>
+      </nav>
+
+      <div class="ham" id="toggle">
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section id="home" class="">
+        <h2 class="sign">
+          <div class="span"></div>
+          Welcome
+          <div class="span"></div>
+        </h2>
+
+        <div class="avatar">
+          <img
+            src="./avatar.jpg"
+            alt="./avatar.jpg"
+            data-testid="slackProfilePicture"
+          />
+        </div>
+        <div class="intro">
+          <h3>Hello 👋</h3>
+          <h3 id="name">
+            I'm <span data-testid="slackDisplayName">Umar Muktar</span>
+          </h3>
+
+          <p>A Frontend developer, Mobile Developer and 3D Artist</p>
+        </div>
+      </section>
+
+      <section id="about" class="fade-in">
+        <h2 class="sign">
+          <div class="span"></div>
+          About Me
+          <div class="span"></div>
+        </h2>
+
+        <span>Hey! <br /></span>
+        <p class="abt">
+          I'm a Web and Mobile Developer and a 3D Artist.<br />
+          I love technology and learning new stuff.<br />
+          Am never tired of learning and meeting new people. <br />
+          <br />
+
+          I'm a Frontend Developer specialized in React.js, I do Mobile
+          Development in both React Native and Flutter, I also do 3D Art in
+          Blender.<br />
+          Looking forward to work with you. <br />
+        </p>
+      </section>
+
+      <section id="plans" class="fade-in">
+        <h2 class="sign">
+          <div class="span"></div>
+          Plans
+          <div class="span"></div>
+        </h2>
+
+        <p class="abt">
+          My Goals for the next two years id to perfect and hone my skills in
+          Web and Mobile Development and hopefully land A job since am about
+          finishing my second year in the University.
+        </p>
+      </section>
+
+      <section class="fade-in" id="tasks">
+        <h2 class="sign">
+          <div class="span"></div>
+          Tasks
+          <div class="span"></div>
+        </h2>
+
+        <p id="today" data-testid="currentDay"></p>
+        <p class="time" id="time" data-testid="currentTimeUTC"></p>
+        <br />
+        <br />
+
+        <h2>Check out these awesome sites</h2>
+
+        <div class="ext_links">
+          <a href=" https://hng.tech/learn">HNG Learn</a>
+          <a href=" https://keyword.dog">Keyword Dog</a>
+          <a href=" https://scrapeanyweb.site">Scrape any web</a>
+        </div>
+      </section>
+
+      <section id="portfolio" class="fade-in">
+        <h2 class="sign">
+          <div class="span"></div>
+          Portfolio
+          <div class="span"></div>
+        </h2>
+
+        <h2>My Experience</h2>
+        <br />
+        <div class="portfolio">
+          <div class="exp">
+            <div class="stack">HTML</div>
+            <div class="per html">
+              <p>98%</p>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="stack">CSS</div>
+            <div class="per css">
+              <p>90%</p>
+            </div>
+          </div>
+
+          <div class="exp">
+            <div class="stack">Python</div>
+            <div class="per py">
+              <p>90%</p>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="stack">JS</div>
+            <div class="per js">
+              <p>86%</p>
+            </div>
+          </div>
+          <div class="exp">
+            <div class="stack">Blender</div>
+            <div class="per blender">
+              <p>80%</p>
+            </div>
+          </div>
+
+          <div class="exp fade-in">
+            <div class="stack">Dart</div>
+            <div class="per dart">
+              <p>70%</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="hire" class="fade-in">
+        <h2 class="sign">
+          <div class="span"></div>
+          Contact Me
+          <div class="span"></div>
+        </h2>
+        <div class="socials">
+          <img src="./icons/fb.png" alt="" />
+          <img src="./icons/whatsapp.png" alt="" />
+          <img src="./icons/envelope.png" alt="" />
+        </div>
+        <br /><br />
+
+        <div class="message">
+          <h3>Send me an Email</h3>
+
+          <p id="email" data-testid="slackEmail">hauwamuktar880@gmail.com</p>
+
+          <form action=".">
+            <div class="inp">
+              <input type="text" id="name" />
+              <label for="name">Name</label>
+            </div>
+
+            <div class="inp">
+              <input type="email" id="email" />
+              <label for="email">Email</label>
+            </div>
+            <textarea
+              placeholder="Enter Message.."
+              cols="30"
+              rows="10"
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="foot-bar">
+      <h2>Python-fuse®</h2>
+      <small>©2023</small>
+
+      <a href="#home">Back to top</a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
