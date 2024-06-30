@@ -22,7 +22,6 @@
   --main-text: #ff00a5;
 }
 
-.main,
 body {
   display: grid;
   place-content: center;
