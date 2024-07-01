@@ -105,17 +105,18 @@ nav {
 }
 
 @media (max-width: 768px) {
-  .avatar img {
-    width: 1px;
-  }
-
   section {
     max-width: 300px;
   }
 }
 @media (min-width: 768px) {
+  .main {
+    width: 100dvw;
+    display: grid;
+    place-content: center;
+  }
   #image {
-    width: 624px;
+    width: 300px;
   }
   nav {
     display: flex;
