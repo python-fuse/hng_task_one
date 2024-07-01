@@ -115,9 +115,9 @@ nav {
     display: grid;
     place-content: center;
   }
-  #image {
+  /* #image {
     width: 300px;
-  }
+  } */
   nav {
     display: flex;
     font-size: 1.3rem;
@@ -255,8 +255,8 @@ section {
   padding: 100px;
   img {
     aspect-ratio: 1;
-    width: 300px;
-    border-radius: 50%;
+    /* width: 300px; */
+    /* border-radius: 50%; */
     filter: drop-shadow(2px 2px 6px var(--main-text));
     margin-bottom: 0.5rem;
   }
